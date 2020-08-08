@@ -1,4 +1,4 @@
-gtsam (4.0.3-1ubuntu2) xenial; urgency=medium
+gtsam (4.0.3-1ubuntu3) focal; urgency=medium
 
   [ Frank Dellaert ]
   * Added a number of docker images
@@ -379,7 +379,7 @@ gtsam (4.0.3-1ubuntu2) xenial; urgency=medium
   * Fix test for full Pose3 expmap
   * Remove pybind11
 
- -- Bernd Pfrommer <bernd.pfrommer@gmail.com>  Sat, 08 Aug 2020 10:02:21 -0400
+ -- Bernd Pfrommer <bernd.pfrommer@gmail.com>  Sat, 08 Aug 2020 10:44:46 -0400
 
 gtsam (4.0.3-1ubuntu1) xenial; urgency=medium
 
