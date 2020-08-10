@@ -1,3 +1,117 @@
+gtsam (4.0.3-1ubuntu5) bionic; urgency=medium
+
+  [ Varun Agrawal ]
+  * move Eigen format definition to Matrix.h
+  * use Eigen formatting for Rot3 ostream
+  * don't align matrix columns
+  * fix print tests for Rot3 and Pose3
+  * Cleaned up printing of Rot3
+  * Cleaned up printing of Pose3
+  * Cleaned up printing of NavState
+  * moved matlab-style matrix format definition back to cpp, updated all formatters
+  * use static_cast for Rot3 matrix
+  * support for landmarks in g2o files
+  * nicer formatting when printing values
+
+  [ Frank dellaert ]
+  * Replaced flag with 4.1 version
+  * Removed all deprecated code w Stephanie...
+
+  [ acxz ]
+  * replace boost random with std random
+
+  [ Varun Agrawal ]
+  * add axis labels to the trajectory plot
+
+  [ acxz ]
+  * use reasonable distribution names
+  * use reasonable distribution name
+  * remove unused base variable
+
+  [ Varun Agrawal ]
+  * fix test for FunctorizedFactor printing
+  * Fix minor bugs
+  * test for readG2o
+  * added axis labels and figure titles as optional params
+  * increase number of build cores and remove sudo requirement
+  * added backwards compatibility for parseVertex
+
+  [ Frank dellaert ]
+  * Improved comment
+  * Made params const
+
+  [ acxz ]
+  * pass in expected Rot3 and parameter p
+
+  [ Jose Luis Blanco Claraco ]
+  * recover SLAM serialization test
+  * Add docs on serializing expressions.
+  * enable compiler warnings and errors for safer code
+  * Fix all new gcc warnings/errors: make explicit virtual/override methods.
+  * Avoid -Woverride in clang <12.0.0
+  * relax override -Werror for now
+  * Fix missing virtual dtors
+  * Fix warnings on incorrect for range reference bindings
+  * remove leftover cmake debug trace
+
+  [ acxz ]
+  * fix warnings on incorrect for range reference bindings
+  * remove useless Planning test
+  * fix return copy
+  * add override keyword
+  * workaround to dereferencing a nullptr
+
+  [ Jose Luis Blanco Claraco ]
+  * Add genericValue() helper
+  * Values initializer_list constructor
+
+  [ Varun Agrawal ]
+  * use \n instead of endl
+
+  [ Jose Luis Blanco-Claraco ]
+  * docs and missing traits
+  * Add variadic-template N-ary ExpressionFactor
+  * typo
+
+  [ Jose Luis Blanco Claraco ]
+  * Deprecate ExpressionFactor2
+  * port ExpressionFactor{2->N}
+
+  [ Jose Luis Blanco-Claraco ]
+  * Add unit test revealing deserialization error
+  * Fix serialization bug in RangeFactor
+
+  [ Jose Luis Blanco Claraco ]
+  * Deprecate ExpressionFactor2 for 4.1
+  * Recover the convenient evaluateError() method
+  * fix evaluateError() methods
+
+  [ Varun Agrawal ]
+  * fixed tests
+
+  [ acxz ]
+  * remove empty smart folder
+  * remove smart from cmake
+
+  [ Varun Agrawal ]
+  * fix indentation of macro guard
+  * wrap preintegrated function
+
+  [ Stephanie McCormick ]
+  * change from const Params back to non-const Params
+
+  [ Varun Agrawal ]
+  * remove virtual
+
+  [ Frank Dellaert ]
+  * Allow graph to be queried
+  * VectorizedGenerators
+  * Removed superfluous size, added doxygen partitions
+  * Allow to pass in pre-computed generators. Should save some energy.
+  * Update README.md
+
+ -- Jose Luis <jlblanco@JLBlanco-PC-UAL>  Mon, 10 Aug 2020 09:35:36 +0200
+
 gtsam (4.0.3-1ubuntu4) bionic; urgency=medium
 
   [ Frank Dellaert ]
